@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="country_code_PH <= 0.5\ngini = 0.581\nsamples = 671205\nvalue = [70728, 257158, 342717, 602]"] ;
+1 [label="term_in_months <= 7.5\ngini = 0.519\nsamples = 510764\nvalue = [68980, 112204, 328978, 602]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="sector_Agriculture <= 0.5\ngini = 0.421\nsamples = 49402\nvalue = [3583, 36359, 8870, 590]"] ;
+1 -> 2 ;
+3 [label="country_code_HT <= 0.5\ngini = 0.345\nsamples = 43121\nvalue = [1138, 34106, 7326, 551]"] ;
+2 -> 3 ;
+81992 [label="count_female <= 0.5\ngini = 0.176\nsamples = 160441\nvalue = [1748, 144954, 13739, 0]"] ;
+0 -> 81992 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7467 [label="country_code_NG <= 0.5\ngini = 0.471\nsamples = 461362\nvalue = [65397, 75845, 320108, 12]"] ;
+1 -> 7467 ;
+5966 [label="country_code_ML <= 0.5\ngini = 0.659\nsamples = 6281\nvalue = [2445, 2253, 1544, 39]"] ;
+2 -> 5966 ;
+7468 [label="term_in_months <= 13.5\ngini = 0.454\nsamples = 451254\nvalue = [55290, 75844, 320108, 12]"] ;
+7467 -> 7468 ;
+81989 [label="loan_amount <= 18975.0\ngini = 0.0\nsamples = 10108\nvalue = [10107, 1, 0, 0]"] ;
+7467 -> 81989 ;
+81993 [label="term_in_months <= 13.5\ngini = 0.552\nsamples = 8457\nvalue = [815, 4862, 2780, 0]"] ;
+81992 -> 81993 ;
+86570 [label="term_in_months <= 13.5\ngini = 0.145\nsamples = 151984\nvalue = [933, 140092, 10959, 0]"] ;
+81992 -> 86570 ;
+81994 [label="activity_Farming <= 0.5\ngini = 0.488\nsamples = 6264\nvalue = [670, 4213, 1381, 0]"] ;
+81993 -> 81994 ;
+85519 [label="activity_Fishing <= 0.5\ngini = 0.501\nsamples = 2193\nvalue = [145, 649, 1399, 0]"] ;
+81993 -> 85519 ;
+86571 [label="activity_Farming <= 0.5\ngini = 0.112\nsamples = 133274\nvalue = [748, 125393, 7133, 0]"] ;
+86570 -> 86571 ;
+102596 [label="loan_amount <= 687.5\ngini = 0.341\nsamples = 18710\nvalue = [185, 14699, 3826, 0]"] ;
+86570 -> 102596 ;
+}
